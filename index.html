@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todos App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" defer src="./main.js"></script>
+  </head>
+  <body
+    class="bg-primary h-screen w-screen p-4 flex items-center justify-center"
+  >
+    <!-- MAIN -->
+    <article class="bg-light w-full h-full rounded-lg shadow-sm p-7">
+      <div class="w-full mb-11">
+        <form class="flex items-center gap-2" id="todo-form">
+          <input
+            type="text"
+            placeholder="Enter a new task"
+            autocomplete="off"
+            autofocus="onn"
+            class="p-3 capitalize flex-1 text-dark font-semibold caret-primary"
+            id="todo-input"
+          />
+          <button type="submit" class="p-0 font-bold text-lg">
+            <i class="bi bi-plus-square-fill text-[2.9rem]"></i>
+          </button>
+        </form>
+      </div>
+      <ul
+        class="overflow-y-scroll h-[82%] w-full pr-2 flex flex-col gap-3 list-none"
+        id="todos-el"
+      ></ul>
+    </article>
+  </body>
+</html>
